@@ -42,7 +42,7 @@ brickInfo = {
 // Create bricks
 bricks = []
 for (let i = 0; i < brickRowCount; i++) {
-    
+    bricks[i] = []
 }
 
 // Draw ball on canvas

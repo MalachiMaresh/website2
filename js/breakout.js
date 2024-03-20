@@ -24,6 +24,8 @@ paddle = {
     dx: 0,
 }
 
+score = 0 
+
 // Draw ball on canvas
 function drawBall() {
     ctx.beginPath()

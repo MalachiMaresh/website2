@@ -4,6 +4,11 @@ closeBtn = document.getElementById('close-btn')
 canvas = document.getElementById('canvas')
 ctx = canvas.getContext('2d')
 
+score = 0
+
+brickRowCount = 9
+brickColumnCount = 5
+
 // Create ball properties
 ball = {
     x: canvas.width / 2,
@@ -24,7 +29,21 @@ paddle = {
     dx: 0,
 }
 
-score = 0 
+//Create brick properties
+brickInfo = {
+    w: 70,
+    h: 20,
+    padding: 10,
+    offsetX: 45,
+    offsetY: 60,
+    visible: true,
+}
+
+// Create bricks
+bricks = []
+for (let i = 0; i < brickRowCount; i++) {
+    
+}
 
 // Draw ball on canvas
 function drawBall() {
@@ -45,14 +64,16 @@ function drawPaddle() {
 }
 
 function drawScore() {
-
+    ctx.font = '20px Arial'
     ctx.fillText(`Score: ${score}`, canvas.width-100, 30)
 }
+
+
 
 function draw() {
     drawBall()
     drawPaddle()
-    drawScore
+    drawScore()
 }
 
 draw()

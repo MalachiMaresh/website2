@@ -39,6 +39,7 @@ h1 {
 }
 
 .btn:active{
+    
     transform: scale(.98);
 
 }

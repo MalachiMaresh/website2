@@ -33,7 +33,25 @@ function drawBall() {
     ctx.closePath()
 }
 
-drawBall()
+// Draw paddle on canvas
+function drawPaddle() {
+    ctx.beginPath()
+    ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h)
+    ctx.fillStyle = '#009599'
+    ctx.fill()
+    ctx.closePath()
+}
+
+function drawScore() {
+    
+}
+
+function draw() {
+    drawBall()
+    drawPaddle()
+}
+
+draw()
 
 // Rules open and close event handelers
 rulesBtn.addEventListener('click', () => {

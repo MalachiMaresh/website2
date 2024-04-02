@@ -99,7 +99,8 @@ function drawBricks() {
         column.forEach(brick => {
             ctx.beginPath()
             ctx.rect(brick.x, brick.y, brick.w, brick.h)
-            ctx.fillStyle = brick.visible ? '#0095dd' : 'transparent';            ctx.fill()
+            ctx.fillStyle = brick.visible ? '#0095dd' : 'transparent';
+            ctx.fill()
             ctx.closePath()
         })
     })
@@ -173,7 +174,7 @@ function moveBall() {
         ball.dy = -1 * ball.dy
         showAllBricks()
         score = 0
-        
+
     }
 
     // Wall collision (left)

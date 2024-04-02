@@ -201,6 +201,7 @@ function moveBall() {
                 ){
                     ball.dy = -1 * ball.dy
                     briick.visible = false
+                    increaseScore()
                 }
 
             }

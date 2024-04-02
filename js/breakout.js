@@ -191,7 +191,7 @@ function moveBall() {
                     ball.y - ball.size < brick.y + brick.h  //bottom of the brick
                 )
                 ball.dy = -1 * ball.dy
-                briick.visible.false
+                briick.visible = false
             }
         })
     })

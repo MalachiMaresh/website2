@@ -177,6 +177,24 @@ function moveBall() {
     if (ball.x + ball.size < 0) {
         ball.dx = -1 * ball.dx
     }
+
+    // Paddle collision
+    if (
+        ball.x - ball.size > paddle.x
+    )
+
+    //Brick collision
+    bricks.forEach(column => {
+        column.forEach(brick => {
+            if (brick.visible) {
+                if (
+                    ball.y - ball.size < brick.y + brick.h  //bottom of the brick
+                )
+                ball.dy = -1 * ball.dy
+                briick.visible.false
+            }
+        })
+    })
 }
 
 

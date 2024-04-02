@@ -203,7 +203,7 @@ function moveBall() {
                     ball.y + ball.size > brick.y //top of brick
                 ){
                     ball.dy = -1 * ball.dy
-                    briick.visible = false
+                    brick.visible = false
                     increaseScore()
                 }
 

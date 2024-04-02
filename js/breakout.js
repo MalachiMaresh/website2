@@ -173,6 +173,7 @@ function moveBall() {
         ball.dy = -1 * ball.dy
         showAllBricks()
         score = 0
+        
     }
 
     // Wall collision (left)

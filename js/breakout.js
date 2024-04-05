@@ -175,7 +175,7 @@ function update() {
     requestAnimationFrame(update)
 }
 
-update()
+
 
 function keyDown(e) {
     if (e.key == 'ArrowRight' || e.key == 'Right' || e.key == 'd') {
@@ -201,4 +201,9 @@ show.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     rules.classList.toggle('show')
+})
+
+start.addEventListener('click', () => {
+    start.style.zIndex = -1
+    update()
 })

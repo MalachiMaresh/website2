@@ -101,7 +101,7 @@ function movePaddle() {
 }
 
 function moveBall() {
-    ball.x += 3 * ball.dx
+    ball.x += 3 f* ball.dx
     ball.y += ball.dy
 
     if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {

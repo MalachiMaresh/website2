@@ -50,6 +50,11 @@ h1 {
     z-index: 4;
 }
 
+.easy {
+    top: 10vh;
+    left: 100px;
+}
+
 .btn {
     cursor: pointer;
     border: 0;

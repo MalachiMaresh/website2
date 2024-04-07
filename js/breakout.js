@@ -24,7 +24,7 @@ ball = {
 paddle = {
     x: canvas.width / 2 - 40,
     y: canvas.height - 20,
-    w: 80,
+    w: 780,
     h: 10,
     speed: 8,
     dx: 0
@@ -101,7 +101,7 @@ function movePaddle() {
 }
 
 function moveBall() {
-    ball.x += ball.dx
+    ball.x += 3 * ball.dx
     ball.y += ball.dy
 
     if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
@@ -110,12 +110,6 @@ function moveBall() {
 
     if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
         ball.dy *= -1
-    }
-
-    if (ball.y + ball.size > canvas.height) {
-        ball.dy *= -1
-        showAllBricks()
-        score = 0
     }
 
     if (
@@ -147,7 +141,6 @@ function moveBall() {
 function increaseScore() {
     score++
     if (score == BrickRowCount * BrickColumnCount) {
-        score = 0
         showAllBricks()
     }
 }
@@ -172,9 +165,23 @@ function update() {
     moveBall()
     movePaddle()
     draw()
-    requestAnimationFrame(update)
+    if (ball.y + ball.size <= canvas.height) {
+        requestAnimationFrame(update)
+    }
+    else {
+        ball.dy *= -1
+        start.style.zIndex = 4
+        start.disabled = false
+    }
 }
 
+function changeCoord() {
+    ball.x = canvas.width / 2
+    ball.y = canvas.height - 40
+    ball.speed = 4
+    ball.dx = 4
+    ball.dy = -4
+}
 
 
 function keyDown(e) {
@@ -204,6 +211,10 @@ close.addEventListener('click', () => {
 })
 
 start.addEventListener('click', () => {
+    showAllBricks()
+    changeCoord()
+    score = 0
     start.style.zIndex = -1
     update()
+    start.disabled = true
 })

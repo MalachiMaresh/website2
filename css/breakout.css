@@ -15,17 +15,18 @@ body {
 }
 
 .start {
+    font-size: 39px;
     position: absolute;
     cursor: pointer;
     border: 0;
-    padding: 10px 20px;
+    padding: 35px 73px;
     background: black;
     color: white;
     border-radius: 5px;
     top: 50vh;
     z-index: 4;
 }
-    
+
 canvas {
     background: #f0f0f0;
     display: block;

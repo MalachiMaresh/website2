@@ -101,6 +101,18 @@ h1 {
 
 }
 
+.easy:active{
+    transform: scale(.98);
+
+}
+.medium:active{
+    transform: scale(.98);
+
+}
+.hard:active{
+    transform: scale(.98);
+
+}
 
 
 .start:active{

@@ -244,7 +244,16 @@ function draw() {
 }
 
 function update() {
-    moveBall()
+    if (level == 1){
+        moveBall1()
+    }
+    if (level == 2){
+        moveBall2()
+    }
+    if (level == 3){
+        moveBall3()
+    }
+
     movePaddle()
     draw()
     if (ball.y + ball.size <= canvas.height) {

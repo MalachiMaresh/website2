@@ -119,7 +119,17 @@ h1 {
 }
 
 .easy .active {
-
+    top: 23vh;
+    left: 150px;
+    position:absolute;
+    cursor: pointer;
+    border: 0;
+    width: 85px;
+    height: 45px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    z-index: 5;
 }
 
 

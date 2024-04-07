@@ -218,7 +218,13 @@ close.addEventListener('click', () => {
 start.addEventListener('click', () => {
     showAllBricks()
     if (level == 1){
-        
+        paddle.w = 150
+    }
+    if (level == 2){
+        paddle.w = 100
+    }
+    if (level == 3){
+        paddle.w = 60
     }
     changeCoord()
     score = 0
@@ -229,6 +235,7 @@ start.addEventListener('click', () => {
 
 easy.addEventListener('click', () => {
     level = 1
+    console.log(easy)
 })
 
 medium.addEventListener('click', () => {

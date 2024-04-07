@@ -143,9 +143,9 @@ function moveBall1() {
     })
 }
 
-function moveBall1() {
-    ball.x += ball.dx
-    ball.y += ball.dy
+function moveBall2() {
+    ball.x += 2 * ball.dx
+    ball.y += 1.5 * ball.dy
 
     if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
         ball.dx *= -1

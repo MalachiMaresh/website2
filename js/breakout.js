@@ -4,6 +4,9 @@ rules = document.getElementById('rules')
 canvas = document.getElementById('canvas')
 ctx = canvas.getContext('2d')
 start = document.getElementById('start')
+easy = document.getElementById('easy')
+medium = document.getElementById('medium')
+hard = document.getElementById('hard')
 
 
 score = 0

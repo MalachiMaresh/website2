@@ -49,19 +49,21 @@ h1 {
     position:absolute;
     cursor: pointer;
     border: 0;
-    padding: 14px 25px;
+    width: 85px;
+    height: 45px;
     background: black;
     color: white;
     border-radius: 5px;
     z-index: 5;
 }
 .medium {
-    top: 10vh;
-    left: 100px;
+    top: 32vh;
+    left: 150px;
     position: absolute;
     cursor: pointer;
     border: 0;
-    padding: 14px 20px;
+    width: 85px;
+    height: 45px;
     background: black;
     color: white;
     border-radius: 5px;
@@ -69,12 +71,13 @@ h1 {
 }
 
 .hard {
-    top: 10vh;
-    left: 100px;
+    top: 41vh;
+    left: 150px;
     position: absolute;
     cursor: pointer;
     border: 0;
-    padding: 10px 20px;
+    width: 85px;
+    height: 45px;
     background: black;
     color: white;
     border-radius: 5px;

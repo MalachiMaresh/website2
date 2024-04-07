@@ -240,6 +240,7 @@ easy.addEventListener('click', () => {
 
 medium.addEventListener('click', () => {
     level = 2
+    console.log(medium)
 })
 
 hard.addEventListener('click', () => {

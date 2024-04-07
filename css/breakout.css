@@ -56,9 +56,30 @@ h1 {
     z-index: 5;
 }
 .medium {
-    
+    top: 10vh;
+    left: 100px;
+    position: absolute;
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    z-index: 5;
 }
 
+.hard {
+    top: 10vh;
+    left: 100px;
+    position: absolute;
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    z-index: 5;
+}
 .btn {
     cursor: pointer;
     border: 0;

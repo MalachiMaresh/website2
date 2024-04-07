@@ -330,7 +330,7 @@ start.addEventListener('click', () => {
 easy.addEventListener('click', () => {
     level = 1
     console.log(easy)
-
+    search.classList.toggle('active')
 })
 
 medium.addEventListener('click', () => {

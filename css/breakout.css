@@ -40,7 +40,14 @@ h1 {
 }
 
 .level {
-    
+    position: absolute;
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    z-index: 4;
 }
 
 .btn {

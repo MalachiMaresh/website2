@@ -56,6 +56,10 @@ h1 {
     transform: scale(.98);
 
 }
+.start:active{
+    transform: scale(.98);
+
+}
 
 .rules-btn {
     position: absolute;

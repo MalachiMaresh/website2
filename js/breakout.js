@@ -181,9 +181,9 @@ function moveBall2() {
     })
 }
 
-function moveBall1() {
-    ball.x += ball.dx
-    ball.y += ball.dy
+function moveBall3() {
+    ball.x += 2.5 * ball.dx
+    ball.y += 2 * ball.dy
 
     if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
         ball.dx *= -1
@@ -254,6 +254,9 @@ function update() {
         ball.dy *= -1
         start.style.zIndex = 4
         start.disabled = false
+        easy.disabled = false
+        medium.disabled = false
+        hard.disabled = false
     }
 }
 
@@ -310,18 +313,24 @@ start.addEventListener('click', () => {
     start.style.zIndex = -1
     update()
     start.disabled = true
+    easy.disabled = true
+    medium.disabled = true
+    hard.disabled = true
 })
 
 easy.addEventListener('click', () => {
     level = 1
     console.log(easy)
+
 })
 
 medium.addEventListener('click', () => {
     level = 2
     console.log(medium)
+
 })
 
 hard.addEventListener('click', () => {
     level = 3
+
 })

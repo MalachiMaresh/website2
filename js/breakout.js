@@ -27,7 +27,7 @@ ball = {
 paddle = {
     x: canvas.width / 2 - 40,
     y: canvas.height - 20,
-    w: 780,
+    w: 40,
     h: 10,
     speed: 8,
     dx: 0
@@ -218,7 +218,7 @@ close.addEventListener('click', () => {
 start.addEventListener('click', () => {
     showAllBricks()
     if (level == 1){
-        
+
     }
     changeCoord()
     score = 0

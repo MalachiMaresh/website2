@@ -27,7 +27,7 @@ ball = {
 paddle = {
     x: canvas.width / 2 - 40,
     y: canvas.height - 20,
-    w: 40,
+    w: 150,
     h: 10,
     speed: 8,
     dx: 0
@@ -106,7 +106,7 @@ function movePaddle() {
 }
 
 function moveBall() {
-    ball.x += 3 f* ball.dx
+    ball.x += ball.dx
     ball.y += ball.dy
 
     if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
@@ -218,7 +218,7 @@ close.addEventListener('click', () => {
 start.addEventListener('click', () => {
     showAllBricks()
     if (level == 1){
-
+        
     }
     changeCoord()
     score = 0

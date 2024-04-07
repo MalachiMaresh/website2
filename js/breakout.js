@@ -56,6 +56,8 @@ for (let i = 0; i < BrickRowCount; i++) {
     }
 }
 
+level = 1
+
 function drawPaddle() {
     ctx.beginPath()
     ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h)
@@ -215,9 +217,24 @@ close.addEventListener('click', () => {
 
 start.addEventListener('click', () => {
     showAllBricks()
+    if (level == 1){
+        
+    }
     changeCoord()
     score = 0
     start.style.zIndex = -1
     update()
     start.disabled = true
+})
+
+easy.addEventListener('click', () => {
+    level = 1
+})
+
+medium.addEventListener('click', () => {
+    level = 2
+})
+
+hard.addEventListener('click', () => {
+    level = 3
 })

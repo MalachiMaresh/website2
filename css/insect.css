@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Noto+Sans+JP:wght@100..900&family=Press+Start+2P&display=swap');
 
 * {
     box-sixing: border-box;
@@ -6,5 +7,6 @@
 body {
     background-color: #516dff;
     color: #ffffff;
-    
+    font-family: "Press Start 2P", system-ui;
+
 }

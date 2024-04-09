@@ -132,4 +132,10 @@ h1 {
     top: 500px;
     left: 200px;
     transform: translate(-50%, -50%) scale(1);
+    transition: transform .3s ease-in-out;
+}
+
+.insect.caught {
+    transform: translate(-50%, -50%) scale(0);
+
 }

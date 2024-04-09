@@ -73,5 +73,44 @@ h1 {
     cursor: pointer;
     font-family: inherit;
     width: 150px;
-    height: 150px
+    height: 150px;
+}
+
+.choose-insect-btn:hover {
+    background-color: #ffffff;
+    color:#516dff;
+}
+
+.choose-insect-btn:active {
+    background-color: rgba(255, 255, 255, .7);
+}
+
+
+.game-container {
+    position: relative;
+}
+
+.time {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.score {
+    postion: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.message {
+    line-height: 1.7;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+    padding: 20px;
+    text-align: center;
+    postion: absolute;
+    top: 0;
+    left: 50%
+    transform: translate(-50%, 150%);
 }

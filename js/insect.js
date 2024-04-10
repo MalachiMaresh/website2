@@ -33,7 +33,7 @@ function createInsect() {
     const {x, y} = getRandomLocation()
     insect.style.top = `${y}px`
     insect.style.left = `%{x}px`
-    insect.innerHTML = `<img src="" alt="" 
+    insect.innerHTML = `<img src="selected_insect.src" alt="selected_insect.alt"
 }
 
 function getRandomLocation() {

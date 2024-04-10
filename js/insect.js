@@ -11,5 +11,13 @@ let selected_insect = {}
 
 
 start_btn.addEventListener('click', () => {
-    screens[0].class
+    screens[0].classList.add('up')
+})
+
+choose_insect_btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const img = btn.querySelector('img')
+        const alt = img.getAttribute('alt')
+        const src = img.getAttribute('src')
+    })
 })

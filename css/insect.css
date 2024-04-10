@@ -21,10 +21,12 @@ body {
 
 .screen {
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: margin .5s ease-in;
 }
 
 .btn {

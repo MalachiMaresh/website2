@@ -113,11 +113,13 @@ h1 {
     left: 50%
     transform: translate(-50%, -150%);
     transtition: transform 0.9s ease-in;
+    opacity: 0;
 }
 
 
 
 .message.visible {
+    opacity: 1;
     transform: translate(-50%, 150%);
 }
 

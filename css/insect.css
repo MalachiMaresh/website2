@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Noto+Sans+JP:wght@100..900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
-    box-sixing: border-box;
+    box-sizing: border-box;
 }
 
-body {
+body{
     background-color: #516dff;
     color: #ffffff;
     font-family: "Press Start 2P", system-ui;
@@ -43,6 +43,8 @@ body {
     opacity: 0.9;
 }
 
+
+
 .screen.up {
     margin-top: -100vh;
 }
@@ -70,22 +72,21 @@ h1 {
 .choose-insect-btn {
     background-color: transparent;
     border: 2px solid #ffffff;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     font-family: inherit;
     width: 150px;
     height: 150px;
 }
 
-.choose-insect-btn:hover {
-    background-color: #ffffff;
-    color:#516dff;
+.choose-insect.btn:hover {
+    background-color : #ffffff;
+    color: #516dff;
 }
 
 .choose-insect-btn:active {
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255,255,255, 0.7)
 }
-
 
 .game-container {
     position: relative;
@@ -97,52 +98,88 @@ h1 {
     left: 20px;
 }
 
+
 .score {
-    postion: absolute;
+    position: absolute;
     top: 20px;
     right: 20px;
 }
-
-.message {
+#win-message{
+    opacity: 0;
     line-height: 1.7;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     z-index: 100;
     padding: 20px;
     text-align: center;
-    postion: absolute;
+    position: absolute;
     top: 0;
-    left: 50%
+    left: 50%;
     transform: translate(-50%, -150%);
-    transtition: transform 0.9s ease-in;
-    opacity: 0;
 }
+#win-message.visible{
+    transition: ease-out 1s;
+    opacity: 1;
+}
+#lose-message{
+    opacity: 0;
+    line-height: 1.7;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -150%);
+}
+#lose-message.visible{
+    transition: ease-out 1s;
+    opacity: 1;
+}
+
+.message {
+    opacity: 0;
+    line-height: 1.7;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    transition: ease-in 1s;
+}
+
 
 
 
 .message.visible {
     opacity: 1;
-    transform: translate(-50%, 150%);
+    transform: translate(-50%, 150%)
 }
+
 
 .insect {
     cursor: pointer;
     display: flex;
-    align- items: center;
+    align-items: center;
     justify-content: center;
     width: 100px;
-    heigh: 100px;
+    height: 100px;
     position: absolute;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform .3s ease-in-out;
-}
-
-.insect.caught {
-    transform: translate(-50%, -50%) scale(0);
-
+    transition: transform 0.3s ease-in-out;
 }
 
 .insect img {
     width: 100px;
     height: 100px;
+}
+
+.insect.caught {
+    transform: translate(-50%, -50%) scale(0);
 }

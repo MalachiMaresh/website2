@@ -43,7 +43,7 @@ function increaseTime() {
         s = `0${s}`
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
-    s++
+    seconds++
 }
 
 function createInsect() {

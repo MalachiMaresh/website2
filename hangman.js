@@ -25,7 +25,7 @@ function displayWord() {
     const innerWord = wordEl.innerText.replace(/\n/g, '')
     if(innerWord == selectedWord){
         finalMessage.innerText = 'Congratulations! You won!'
-        popup.stly.display = 'flex'
+        popup.style.display = 'flex'
     }
 }
 
@@ -46,6 +46,12 @@ function updateWrongLettersEl(){
             part.style.display = 'none'
         }
     })
+
+    // Check if lost
+    if (wrongLetters.length == figureParts.length) {
+        finalMessage.innerText = 'You suck'
+        popup.style.display = 'flex'
+    }
 }
 
 

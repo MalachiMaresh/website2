@@ -1,41 +1,75 @@
 const wordEl = document.getElementById('word')
-const wordLetterEl = document.getElementById('wrong-letters')
+const wrongLettersEl = document.getElementById('wrong-letters')
 const playAgainBtn = document.getElementById('play-again')
 const popup = document.getElementById('popup-container')
 const notification = document.getElementById('notification-container')
 const finalMessage = document.getElementById('final-message')
 const figureParts = document.querySelectorAll('.figure-part')
 
-const word = ['application', 'programming', 'interface', 'atrocious']
+const word = ['application', 'programming', 'interface', 'wizard']
+
 let selectedIndex = Math.floor(word.length * Math.random())
 let selectedWord = word[selectedIndex]
 
 const correctLetters = []
 const wrongLetters = []
 
-// Show hidden word
 function displayWord() {
     wordEl.innerHTML = `
-    ${selectedWord
-        .split('')
-        .map(letter => `
+    ${selectedWord.split('').map(letter => `
         <span class="letter">
             ${correctLetters.includes(letter) ? letter : ''}
         </span>
-        ` ).join('')
-    }
-    `
+    `).join('')}
+`
     const innerWord = wordEl.innerText.replace(/\n/g, '')
-
-    if (innerWord == selected Word) {
-        finalMessage.innerText = 'You don't suck at this game!'
-        popup.style.display = 'flex'
+    if(innerWord == selectedWord){
+        finalMessage.innerText = 'Congratulations! You won!'
+        popup.stly.display = 'flex'
     }
 }
 
-// Keydown letter press
-window.addEventListener('keydown', e =>)
 
+//update wrong letters
+function updateWrongLettersEl(){
+    wrongLettersEl.innerHTML = `
+    ${wrongLetters.length > 0 ? '<p>Wrong<p>' : ''}
+}
+
+
+//show notification
+function showNotification(){
+    notification.classList.add('show')
+
+    setTimeout(() => {
+        notifciation.classList.remove('show')
+    }, 2000)
+}
+
+
+//keydown letter press
+window.addEventListener('keydown', e =>{
+if(e.keyCode >= 65 && e.keyCode <=90){
+    const letter = e.key
+
+    if(selectedWord.includes(letter)){
+        if(!correctLetters.includes(letter)){
+            correctLetters.push(letter)
+            displayWord()
+        } else{
+            showNotification()
+        }
+    } else{
+        if(!wrongLetters.include(letter)){
+            wrongLetters.push(letter)
+
+            updateWrongLettersEl()
+        } else {
+            showNotification()
+        }
+    }
+}
+})
 
 
 displayWord()

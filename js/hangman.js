@@ -121,3 +121,5 @@ playAgainBtn.addEventListener('click', () => {
         popup.style.display = 'none'
 
 })
+
+displayWord()

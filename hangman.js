@@ -1,6 +1,6 @@
 const wordEl = document.getElementById('word')
 const wrongLettersEl = document.getElementById('wrong-letters')
-const playAgainBtn = document.getElementById('play-again')
+const playAgainBtn = document.getElementById('play-button')
 const popup = document.getElementById('popup-container')
 const notification = document.getElementById('notification-container')
 const finalMessage = document.getElementById('final-message')
@@ -87,6 +87,22 @@ if(e.keyCode >= 65 && e.keyCode <=90){
         }
     }
 }
+})
+
+
+playAgainBtn.addEventListener('click', () => {
+    correctLetters.length = 0
+    wrongLetters.length = 0
+
+    let selectedIndex = Math.floor(word.length * Math.random())
+    let selectedWord = word[selectedIndex]
+
+    displayWord()
+
+    updateWrongLettersEl(
+
+    popup.style.display = 'none'
+    )
 })
 
 

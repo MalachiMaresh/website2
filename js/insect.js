@@ -45,9 +45,6 @@ function increaseTime() {
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
     seconds++
-    if (seconds == 30 && score < 60) {
-        
-    }
 }
 
 function createInsect() {

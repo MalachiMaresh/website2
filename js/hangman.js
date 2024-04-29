@@ -59,7 +59,7 @@ function updateWrongLettersEl () {
 
     // Check if lost
     if (wrongLetters.length == 6) {
-        finalMessage.innerText = 'Unfortunately you lost! Your word was ${selectedWord}'
+        finalMessage.innerText = `Unfortunately you lost! Your word was ${selectedWord}`
         popup.style.display = 'flex'
     }
 }

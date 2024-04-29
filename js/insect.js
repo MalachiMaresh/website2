@@ -45,7 +45,7 @@ function increaseTime() {
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
     seconds++
-    if (seconds == 30 && 
+    if (seconds == 30 &&
 }
 
 function createInsect() {
@@ -86,8 +86,4 @@ function getRandomLocation() {
     const x = Math.random() * (width - 200) + 100
     const y = Math.random() * (height - 200) + 100
     return {x,y}
-}
-
-function final() {
-    if
 }

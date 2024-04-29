@@ -24,7 +24,7 @@ choose_insect_btns.forEach(btn => {
         selected_insect = {src, alt}
         setTimeout(createInsect, 1000)
         startGame()
-        
+
     })
 })
 
@@ -45,6 +45,7 @@ function increaseTime() {
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
     seconds++
+    if (seconds == 30 && 
 }
 
 function createInsect() {

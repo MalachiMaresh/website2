@@ -5,6 +5,8 @@ const start_btn = document.getElementById('start-btn')
 const timeEl = document.getElementById('time')
 const scoreEl = document.getElementById('score')
 const message = document.getElementById('message')
+const lose = document.getElementById('lose')
+const win = document.getElementById('win')
 let seconds = 0
 let score = 0
 let selected_insect = {}
@@ -59,6 +61,12 @@ function increaseTime() {
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
     seconds++
+    if (seconds == 30 && score < 60) {
+        lose.classList.add('visible')
+    }
+    if (seconds < 30 && score >= 60) {
+        win.classList.add('visible')
+    }
 }
 
 function createInsect() {

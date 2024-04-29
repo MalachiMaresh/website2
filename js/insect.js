@@ -24,6 +24,7 @@ choose_insect_btns.forEach(btn => {
         selected_insect = {src, alt}
         setTimeout(createInsect, 1000)
         startGame()
+        
     })
 })
 
@@ -87,5 +88,5 @@ function getRandomLocation() {
 }
 
 function final() {
-    if 
+    if
 }

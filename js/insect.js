@@ -67,6 +67,10 @@ function increaseTime() {
     if (seconds < 30 && score >= 60) {
         win.classList.add('visible')
     }
+    if (seconds == 36){
+        lose.classList.remove('visible')
+        win.classList.remove('visible')
+    }
 }
 
 function createInsect() {

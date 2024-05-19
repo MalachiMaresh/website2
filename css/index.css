@@ -1,7 +1,16 @@
 * {
-    
+
 }
 
+.insect {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: center;
+}
 
 .title {
     text-color: red;

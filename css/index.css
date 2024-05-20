@@ -12,6 +12,12 @@
     text-align: center;
 }
 
+body {
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+  }
+
 .title {
     text-color: red;
     background-color: green;

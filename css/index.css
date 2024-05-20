@@ -2,7 +2,7 @@
     text-decoration: none;
 }
 
-.gamebut {
+button {
     position: relative;
     background-color: white;
     cursor: pointer;

@@ -25,15 +25,18 @@ body {
     background-color: green;
 }
 
-.ins {
+#ins {
     background-color: green;
+    position: absolute;
+    top: 60px;
+    left: 180px;
     width: 50vh;
     height: 50vw;
 }
 
 .input1 {
 
-    postion: absolute;
+    postion: relative;
     top: 10px;
     background-color: white;
     cursor: pointer;

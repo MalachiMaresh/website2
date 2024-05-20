@@ -30,10 +30,11 @@ body {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1.2rem;
-    width: 180px;
-    height: 75px;
+    width: 178px;
+    height: 73px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: 2px solid black;
 }

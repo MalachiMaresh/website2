@@ -14,6 +14,7 @@
 }
 
 body {
+    position: relative;
     background-color: pink;
     justify-content: center;
     align-items: center;
@@ -24,9 +25,14 @@ body {
     background-color: green;
 }
 
+.ha {
+    background-color: green;
+}
+
 .input1 {
-    top: 10vh;
-    right: 30vh;
+
+    postion: absolute;
+    top: 10px;
     background-color: white;
     cursor: pointer;
     border-radius: 5px;

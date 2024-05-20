@@ -25,7 +25,8 @@ body {
 }
 
 .input1 {
-    position: relative;
+    top: 10vh;
+    right: 30vh;
     background-color: white;
     cursor: pointer;
     border-radius: 5px;

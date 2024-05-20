@@ -8,7 +8,8 @@
     cursor: pointer;
     border-radius: 5px;
     font-size: 1.2rem;
-    padding: 1.5rem 3rem;
+    width: 180px;
+    height: 75px;
     text-align: center;
 }
 
@@ -23,46 +24,3 @@ body {
     background-color: green;
 }
 
-
-.ha{
-    height: 50px;
-    position: relative;
-
-}
-
-.ha .btn3{
-    position: absolute;
-    top: 0;
-    left: 0px;
-    font-size: 24px;
-    background-color: white;
-    border: 0;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    transition: transform 3s ease;
-}
-
-.ha .input {
-    background-color: white;
-    border: 0;
-    font-size: 18px;
-    height: 50px;
-    width: 50px;
-    padding: 15px;
-    transition: width 3s ease;
-}
-
-.ha .input:focus {
-    outline: none;
-}
-
-.ha.active .input {
-    width: 200px;
-}
-
-
-
-.ha.active .btn3 {
-    transform: translateX(198px);
-}

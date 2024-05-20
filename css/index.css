@@ -33,4 +33,7 @@ body {
     width: 180px;
     height: 75px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    
 }

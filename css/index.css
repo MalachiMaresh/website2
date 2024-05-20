@@ -60,7 +60,6 @@ body {
 .btn1 {
 
     postion: absolute;
-    top: 10px;
     background-color: white;
     cursor: pointer;
     border-radius: 5px;

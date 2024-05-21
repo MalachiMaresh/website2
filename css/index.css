@@ -35,7 +35,7 @@ body {
 }
 
 .ins.active .input1 {
-
+    z-index: 3;
     position: relative;
     top: 10px;
     background-color: white;
@@ -54,6 +54,7 @@ body {
 
 
 .input1 {
+    z-index: 0;
     position: relative;
     top: 10px;
     background-color: white;
@@ -70,7 +71,7 @@ body {
 }
 
 .btn1 {
-
+    z-index: 3;
     position: absolute;
     top: 0;
     left: 0;
@@ -85,7 +86,7 @@ body {
 }
 
 .ins.active .btn1 {
-
+    z-index: 0;
     position: absolute;
     top: 0;
     left: 0;

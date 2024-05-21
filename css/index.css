@@ -34,7 +34,7 @@ body {
     height: 50vw;
 }
 
-.input1.active {
+.ins.active .input1 {
 
     position: relative;
     top: 10px;
@@ -84,7 +84,7 @@ body {
 
 }
 
-.btn1.active {
+.ins.active .btn1 {
 
     position: absolute;
     top: 0;

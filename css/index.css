@@ -92,7 +92,7 @@ body {
     z-index: 4;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 400px;
     background-color: white;
     cursor: pointer;
     border-radius: 5px;

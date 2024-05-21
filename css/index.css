@@ -106,7 +106,7 @@ body {
 .br {
     background-color: green;
     position: relative;
-    top: -226px;
+    top: -465px;
     left: 180px;
     width: 50vh;
     height: 50vw;
@@ -167,6 +167,84 @@ body {
 }
 
 .br.active .btn2 {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 178px;
+    height: 76px;
+    text-align: center;
+
+}
+
+.ha {
+    background-color: green;
+    position: relative;
+    top: -706px;
+    left: 180px;
+    width: 50vh;
+    height: 50vw;
+}
+
+.ha.active .input3 {
+
+    font-size: 4px;
+    overflow-wrap: break-word;
+    z-index: 3;
+    position: relative;
+    top: 2px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 400px;
+    height: 73px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid black;
+}
+
+
+
+.input3 {
+    z-index: 0;
+    position: relative;
+    top: 10px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 178px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn3 {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 178px;
+    height: 76px;
+    text-align: center;
+
+}
+
+.ha.active .btn3 {
     z-index: 4;
     position: absolute;
     top: 0;

@@ -60,7 +60,7 @@ function updateWrongLettersEl() {
 
     //check if lost
     if (wrongLetters.length == figureParts.length) {
-        finalMessage.innerText = `You suck at the Game! The word you couldn't guess was ${selectedWord}`
+        finalMessage.innerText = `You suck at the game! The word you couldn't guess was ${selectedWord}`
         popup.style.display = 'flex'
         continueRunning = false
     }

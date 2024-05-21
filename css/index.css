@@ -22,11 +22,9 @@ body {
 
 .title {
     text-color: red;
-    background-color: green;
 }
 
 .ins {
-    background-color: green;
     position: relative;
     top: -226px;
     left: 180px;
@@ -104,7 +102,6 @@ body {
 }
 
 .br {
-    background-color: green;
     position: relative;
     top: -465px;
     left: 180px;
@@ -182,7 +179,6 @@ body {
 }
 
 .ha {
-    background-color: green;
     position: relative;
     top: -706px;
     left: 180px;

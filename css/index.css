@@ -35,17 +35,17 @@ body {
 }
 
 .ins.active .input1 {
-    
+
     font-size: 4px;
     overflow-wrap: break-word;
     z-index: 3;
     position: relative;
-    top: 10px;
+    top: 2px;
     background-color: white;
     cursor: pointer;
     border-radius: 5px;
     font-size: 1.2rem;
-    width: 178px;
+    width: 400px;
     height: 73px;
     text-align: center;
     display: flex;

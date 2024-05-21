@@ -35,6 +35,9 @@ body {
 }
 
 .ins.active .input1 {
+    
+    font-size: 4px;
+    overflow-wrap: break-word;
     z-index: 3;
     position: relative;
     top: 10px;

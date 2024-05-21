@@ -33,8 +33,6 @@ body {
 }
 
 .ins.active .input1 {
-
-    font-size: 4px;
     overflow-wrap: break-word;
     z-index: 3;
     position: relative;
@@ -61,7 +59,7 @@ body {
     background-color: white;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: .5rem;
     width: 178px;
     height: 50px;
     text-align: center;
@@ -137,7 +135,7 @@ body {
     background-color: white;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: .5rem;
     width: 178px;
     height: 50px;
     text-align: center;
@@ -187,7 +185,6 @@ body {
 
 .ha.active .input3 {
 
-    font-size: 4px;
     overflow-wrap: break-word;
     z-index: 3;
     position: relative;
@@ -214,7 +211,7 @@ body {
     background-color: white;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: .5rem;
     width: 178px;
     height: 50px;
     text-align: center;

@@ -14,10 +14,13 @@
 }
 
 body {
+
     position: relative;
     background-color: pink;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    
   }
 
 .title {

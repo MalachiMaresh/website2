@@ -83,3 +83,18 @@ body {
     text-align: center;
 
 }
+
+.btn1.active {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 178px;
+    height: 76px;
+    text-align: center;
+
+}

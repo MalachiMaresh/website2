@@ -28,12 +28,11 @@ body {
 }
 
 .ins {
-    background-color: blue;
     position: relative;
     top: -226px;
     left: 180px;
     width: 50vh;
-    height: 50vw;
+    height: 76px;
 }
 
 .ins.active .input1 {
@@ -104,12 +103,12 @@ body {
 }
 
 .br {
-    background-color: green;
     position: relative;
-    top: -465px;
+    top: -226px;
     left: 180px;
     width: 50vh;
-    height: 0px;
+    height: 76px;
+
 }
 
 .br.active .input2 {
@@ -181,10 +180,9 @@ body {
 }
 
 .ha {
-    background-color: blue;
 
     position: relative;
-    top: -706px;
+    top: -226px;
     left: 180px;
 }
 

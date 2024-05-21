@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+
   }
 
 .title {
@@ -28,6 +28,7 @@ body {
 }
 
 .ins {
+    background-color: blue;
     position: relative;
     top: -226px;
     left: 180px;
@@ -103,6 +104,7 @@ body {
 }
 
 .br {
+    background-color: green;
     position: relative;
     top: -465px;
     left: 180px;
@@ -179,6 +181,8 @@ body {
 }
 
 .ha {
+    background-color: blue;
+
     position: relative;
     top: -706px;
     left: 180px;

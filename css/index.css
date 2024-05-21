@@ -111,8 +111,6 @@ body {
 
 .br.active .input2 {
     font-size: 400px;
-
-
     overflow-wrap: break-word;
     z-index: 3;
     position: relative;
@@ -133,6 +131,7 @@ body {
 
 
 .input2 {
+
     z-index: 0;
     position: relative;
     top: 10px;
